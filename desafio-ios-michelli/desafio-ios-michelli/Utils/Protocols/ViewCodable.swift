@@ -11,7 +11,6 @@ public protocol ViewCodable {
     func configure()
     func buildHierarchy()
     func buildConstraints()
-    func render()
     func setupView()
 }
 
@@ -21,7 +20,6 @@ public extension ViewCodable {
         configure()
         buildHierarchy()
         buildConstraints()
-        render()
     }
 
     func configure() {}
