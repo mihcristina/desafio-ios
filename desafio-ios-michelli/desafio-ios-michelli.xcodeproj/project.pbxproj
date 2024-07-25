@@ -12,6 +12,10 @@
 		837D44DC2C52933200372C67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44DB2C52933200372C67 /* ViewController.swift */; };
 		837D44E12C52933400372C67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837D44E02C52933400372C67 /* Assets.xcassets */; };
 		837D44E42C52933400372C67 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 837D44E32C52933400372C67 /* Base */; };
+		837D44EE2C5295DA00372C67 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44ED2C5295DA00372C67 /* RootViewController.swift */; };
+		837D44F02C5295E900372C67 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44EF2C5295E900372C67 /* Root.swift */; };
+		837D44F22C5295FE00372C67 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44F12C5295FE00372C67 /* RootViewModel.swift */; };
+		837D44F62C52967800372C67 /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44F52C52967800372C67 /* ViewCodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		837D44E02C52933400372C67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		837D44E32C52933400372C67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		837D44E52C52933400372C67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837D44ED2C5295DA00372C67 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		837D44EF2C5295E900372C67 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		837D44F12C5295FE00372C67 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		837D44F52C52967800372C67 /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,8 @@
 		837D44D62C52933200372C67 /* desafio-ios-michelli */ = {
 			isa = PBXGroup;
 			children = (
+				837D44F32C52965900372C67 /* Utils */,
+				837D44EB2C5295B300372C67 /* RootView */,
 				837D44D72C52933200372C67 /* AppDelegate.swift */,
 				837D44D92C52933200372C67 /* SceneDelegate.swift */,
 				837D44DB2C52933200372C67 /* ViewController.swift */,
@@ -62,6 +72,32 @@
 				837D44E52C52933400372C67 /* Info.plist */,
 			);
 			path = "desafio-ios-michelli";
+			sourceTree = "<group>";
+		};
+		837D44EB2C5295B300372C67 /* RootView */ = {
+			isa = PBXGroup;
+			children = (
+				837D44ED2C5295DA00372C67 /* RootViewController.swift */,
+				837D44EF2C5295E900372C67 /* Root.swift */,
+				837D44F12C5295FE00372C67 /* RootViewModel.swift */,
+			);
+			path = RootView;
+			sourceTree = "<group>";
+		};
+		837D44F32C52965900372C67 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				837D44F42C52966700372C67 /* Protocols */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		837D44F42C52966700372C67 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				837D44F52C52967800372C67 /* ViewCodable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +172,11 @@
 			files = (
 				837D44DC2C52933200372C67 /* ViewController.swift in Sources */,
 				837D44D82C52933200372C67 /* AppDelegate.swift in Sources */,
+				837D44EE2C5295DA00372C67 /* RootViewController.swift in Sources */,
 				837D44DA2C52933200372C67 /* SceneDelegate.swift in Sources */,
+				837D44F62C52967800372C67 /* ViewCodable.swift in Sources */,
+				837D44F22C5295FE00372C67 /* RootViewModel.swift in Sources */,
+				837D44F02C5295E900372C67 /* Root.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
