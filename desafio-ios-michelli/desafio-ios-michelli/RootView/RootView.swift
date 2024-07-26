@@ -23,7 +23,7 @@ class RootView: UIView {
         image.contentMode = .scaleAspectFill
         image.clipsToBounds = true
         image.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
-        image.layer.cornerRadius = 200
+        image.layer.cornerRadius = 210
         return image
     }()
 
@@ -63,6 +63,18 @@ class RootView: UIView {
         return label
     }()
 
+    private lazy var loginButton: PrimaryButton = {
+        let button = PrimaryButton(title: "Quero fazer parte!", foregroundColor: .primary, backgColor: .white, enumIcon: .pink)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+
+    private lazy var secondaryButton: SecondaryButton = {
+        let button = SecondaryButton(title: "Já sou cliente", foregroundColor: .white, backgColor: .primary)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -82,6 +94,8 @@ extension RootView: ViewCodable {
         backgroundView.addSubview(titleLabel)
         backgroundView.addSubview(subtitleLabel)
         backgroundView.addSubview(descriptionLabel)
+        backgroundView.addSubview(loginButton)
+        backgroundView.addSubview(secondaryButton)
     }
     
     func buildConstraints() {
@@ -108,6 +122,17 @@ extension RootView: ViewCodable {
 
             descriptionLabel.topAnchor.constraint(equalTo: self.subtitleLabel.bottomAnchor, constant: 16),
             descriptionLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 24),
+
+            loginButton.topAnchor.constraint(equalTo: self.descriptionLabel.bottomAnchor, constant: 24),
+            loginButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 24),
+            loginButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -24),
+            loginButton.heightAnchor.constraint(equalToConstant: 64),
+            
+            secondaryButton.topAnchor.constraint(equalTo: self.loginButton.bottomAnchor, constant: 16),
+            secondaryButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 24),
+            secondaryButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -24),
+            secondaryButton.heightAnchor.constraint(equalToConstant: 64),
+
         ])
     }
 

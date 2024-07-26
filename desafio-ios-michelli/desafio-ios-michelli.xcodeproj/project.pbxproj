@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8336B6D12C5432D30020D996 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B6D02C5432D30020D996 /* CustomButton.swift */; };
+		8336B6D12C5432D30020D996 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B6D02C5432D30020D996 /* PrimaryButton.swift */; };
+		8336B6D32C5442F00020D996 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B6D22C5442F00020D996 /* SecondaryButton.swift */; };
 		837D44D82C52933200372C67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44D72C52933200372C67 /* AppDelegate.swift */; };
 		837D44DA2C52933200372C67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44D92C52933200372C67 /* SceneDelegate.swift */; };
 		837D44DC2C52933200372C67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44DB2C52933200372C67 /* ViewController.swift */; };
@@ -25,7 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8336B6D02C5432D30020D996 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		8336B6D02C5432D30020D996 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		8336B6D22C5442F00020D996 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		837D44D42C52933200372C67 /* desafio-ios-michelli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-ios-michelli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		837D44D72C52933200372C67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		837D44D92C52933200372C67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +60,8 @@
 		8336B6CF2C5432BA0020D996 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				8336B6D02C5432D30020D996 /* CustomButton.swift */,
+				8336B6D02C5432D30020D996 /* PrimaryButton.swift */,
+				8336B6D22C5442F00020D996 /* SecondaryButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -215,11 +218,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8336B6D32C5442F00020D996 /* SecondaryButton.swift in Sources */,
 				837D44DC2C52933200372C67 /* ViewController.swift in Sources */,
 				837D44D82C52933200372C67 /* AppDelegate.swift in Sources */,
 				837D44EE2C5295DA00372C67 /* RootViewController.swift in Sources */,
 				837D44DA2C52933200372C67 /* SceneDelegate.swift in Sources */,
-				8336B6D12C5432D30020D996 /* CustomButton.swift in Sources */,
+				8336B6D12C5432D30020D996 /* PrimaryButton.swift in Sources */,
 				837D44F62C52967800372C67 /* ViewCodable.swift in Sources */,
 				837D44F22C5295FE00372C67 /* RootViewModel.swift in Sources */,
 				837D45022C54201600372C67 /* UIFont+Extension.swift in Sources */,
