@@ -9,18 +9,58 @@ import UIKit
 
 class RootView: UIView {
 
+    private lazy var backgroundView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .primary
+        return view
+    }()
+    
     private lazy var backgroundImage: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         image.image = UIImage(named: "image")
         image.contentMode = .scaleAspectFill
+        image.clipsToBounds = true
+        image.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        image.layer.cornerRadius = 200
         return image
     }()
 
-    private lazy var backgroundView: UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
+    private lazy var logoImage: UIImageView = {
+        let image = UIImageView()
+        image.translatesAutoresizingMaskIntoConstraints = false
+        image.image = UIImage(named: "Complete")
+        image.contentMode = .scaleToFill
+        return image
+    }()
+
+    private lazy var titleLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Conta Digital PJ"
+        label.font = UIFont.customFont(type: .black, size: 28)
+        label.textColor = .white
+        return label
+    }()
+    
+    private lazy var subtitleLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Poderosamente simples"
+        label.font = UIFont.customFont(type: .book, size: 28)
+        label.textColor = .white
+        return label
+    }()
+
+    private lazy var descriptionLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Sua empresa livre burocracias e de taxas para\ngerar boletos, fazer transferências e\npagamentos."
+        label.font = UIFont.customFont(type: .roman, size: 16)
+        label.numberOfLines = 0
+        label.textColor = .white
+        return label
     }()
 
     override init(frame: CGRect) {
@@ -36,12 +76,39 @@ class RootView: UIView {
 
 extension RootView: ViewCodable {
     func buildHierarchy() {
-        addSubview(backgroundImage)
         addSubview(backgroundView)
+        backgroundView.addSubview(backgroundImage)
+        backgroundImage.addSubview(logoImage)
+        backgroundView.addSubview(titleLabel)
+        backgroundView.addSubview(subtitleLabel)
+        backgroundView.addSubview(descriptionLabel)
     }
     
     func buildConstraints() {
-        
+        NSLayoutConstraint.activate([
+            backgroundView.topAnchor.constraint(equalTo: self.topAnchor),
+            backgroundView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            backgroundView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            backgroundView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+
+            backgroundImage.topAnchor.constraint(equalTo: self.backgroundView.topAnchor),
+            backgroundImage.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: -20),
+            backgroundImage.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 20),
+            backgroundImage.heightAnchor.constraint(equalToConstant: 490),
+            
+            logoImage.topAnchor.constraint(equalTo: self.topAnchor, constant: 44),
+            logoImage.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 24),
+            backgroundImage.widthAnchor.constraint(equalToConstant: 90),
+
+            titleLabel.topAnchor.constraint(equalTo: self.backgroundImage.bottomAnchor, constant: 16),
+            titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 24),
+
+            subtitleLabel.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 10),
+            subtitleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 24),
+
+            descriptionLabel.topAnchor.constraint(equalTo: self.subtitleLabel.bottomAnchor, constant: 16),
+            descriptionLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 24),
+        ])
     }
 
 }

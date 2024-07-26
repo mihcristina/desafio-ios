@@ -9,6 +9,13 @@ import UIKit
 
 class RootViewController: UIViewController {
 
+    var rootView: RootView?
+
+    override func loadView() {
+        rootView = RootView()
+        self.view = rootView
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

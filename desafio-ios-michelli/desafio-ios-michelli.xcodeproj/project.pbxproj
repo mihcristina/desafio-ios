@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8336B6D12C5432D30020D996 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B6D02C5432D30020D996 /* CustomButton.swift */; };
 		837D44D82C52933200372C67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44D72C52933200372C67 /* AppDelegate.swift */; };
 		837D44DA2C52933200372C67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44D92C52933200372C67 /* SceneDelegate.swift */; };
 		837D44DC2C52933200372C67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44DB2C52933200372C67 /* ViewController.swift */; };
@@ -17,9 +18,14 @@
 		837D44F22C5295FE00372C67 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44F12C5295FE00372C67 /* RootViewModel.swift */; };
 		837D44F62C52967800372C67 /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44F52C52967800372C67 /* ViewCodable.swift */; };
 		837D44F92C52980F00372C67 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44F82C52980F00372C67 /* UIColor+Extension.swift */; };
+		837D44FE2C541C6700372C67 /* AvenirLTStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 837D44FB2C541C6700372C67 /* AvenirLTStd-Black.otf */; };
+		837D44FF2C541C6700372C67 /* AvenirLTStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 837D44FC2C541C6700372C67 /* AvenirLTStd-Book.otf */; };
+		837D45002C541C6700372C67 /* AvenirLTStd-Roman.otf in Resources */ = {isa = PBXBuildFile; fileRef = 837D44FD2C541C6700372C67 /* AvenirLTStd-Roman.otf */; };
+		837D45022C54201600372C67 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D45012C54201600372C67 /* UIFont+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8336B6D02C5432D30020D996 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		837D44D42C52933200372C67 /* desafio-ios-michelli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-ios-michelli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		837D44D72C52933200372C67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		837D44D92C52933200372C67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +38,10 @@
 		837D44F12C5295FE00372C67 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		837D44F52C52967800372C67 /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
 		837D44F82C52980F00372C67 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		837D44FB2C541C6700372C67 /* AvenirLTStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AvenirLTStd-Black.otf"; path = "../../../../../../Desktop/avenir_ff/AvenirLTStd-Black.otf"; sourceTree = "<group>"; };
+		837D44FC2C541C6700372C67 /* AvenirLTStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AvenirLTStd-Book.otf"; path = "../../../../../../Desktop/avenir_ff/AvenirLTStd-Book.otf"; sourceTree = "<group>"; };
+		837D44FD2C541C6700372C67 /* AvenirLTStd-Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AvenirLTStd-Roman.otf"; path = "../../../../../../Desktop/avenir_ff/AvenirLTStd-Roman.otf"; sourceTree = "<group>"; };
+		837D45012C54201600372C67 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8336B6CF2C5432BA0020D996 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8336B6D02C5432D30020D996 /* CustomButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		837D44CB2C52933200372C67 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +107,8 @@
 		837D44F32C52965900372C67 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				8336B6CF2C5432BA0020D996 /* Components */,
+				837D44FA2C541C5400372C67 /* Fonts */,
 				837D44F72C5297FC00372C67 /* Extensions */,
 				837D44F42C52966700372C67 /* Protocols */,
 			);
@@ -107,8 +127,19 @@
 			isa = PBXGroup;
 			children = (
 				837D44F82C52980F00372C67 /* UIColor+Extension.swift */,
+				837D45012C54201600372C67 /* UIFont+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		837D44FA2C541C5400372C67 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				837D44FB2C541C6700372C67 /* AvenirLTStd-Black.otf */,
+				837D44FC2C541C6700372C67 /* AvenirLTStd-Book.otf */,
+				837D44FD2C541C6700372C67 /* AvenirLTStd-Roman.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,7 +201,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				837D44E12C52933400372C67 /* Assets.xcassets in Resources */,
+				837D44FE2C541C6700372C67 /* AvenirLTStd-Black.otf in Resources */,
 				837D44E42C52933400372C67 /* Base in Resources */,
+				837D45002C541C6700372C67 /* AvenirLTStd-Roman.otf in Resources */,
+				837D44FF2C541C6700372C67 /* AvenirLTStd-Book.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +219,10 @@
 				837D44D82C52933200372C67 /* AppDelegate.swift in Sources */,
 				837D44EE2C5295DA00372C67 /* RootViewController.swift in Sources */,
 				837D44DA2C52933200372C67 /* SceneDelegate.swift in Sources */,
+				8336B6D12C5432D30020D996 /* CustomButton.swift in Sources */,
 				837D44F62C52967800372C67 /* ViewCodable.swift in Sources */,
 				837D44F22C5295FE00372C67 /* RootViewModel.swift in Sources */,
+				837D45022C54201600372C67 /* UIFont+Extension.swift in Sources */,
 				837D44F02C5295E900372C67 /* RootView.swift in Sources */,
 				837D44F92C52980F00372C67 /* UIColor+Extension.swift in Sources */,
 			);
@@ -337,7 +373,7 @@
 				INFOPLIST_FILE = "desafio-ios-michelli/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -365,7 +401,7 @@
 				INFOPLIST_FILE = "desafio-ios-michelli/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
