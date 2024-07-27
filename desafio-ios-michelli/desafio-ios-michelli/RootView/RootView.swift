@@ -7,7 +7,14 @@
 
 import UIKit
 
+protocol RootViewDelegate: AnyObject {
+    func registerButton()
+    func loginButton()
+}
+
 class RootView: UIView {
+
+    weak var delegate: RootViewDelegate?
 
     private lazy var backgroundView: UIView = {
         let view = UIView()
@@ -66,14 +73,24 @@ class RootView: UIView {
     private lazy var loginButton: PrimaryButton = {
         let button = PrimaryButton(title: "Quero fazer parte!", foregroundColor: .primary, backgColor: .white, enumIcon: .pink)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(registerButton), for: .touchUpInside)
         return button
     }()
 
     private lazy var secondaryButton: SecondaryButton = {
         let button = SecondaryButton(title: "Já sou cliente", foregroundColor: .white, backgColor: .primary)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(alreadyIsCostumerButton), for: .touchUpInside)
         return button
     }()
+
+    @objc func registerButton() {
+        delegate?.registerButton()
+    }
+
+    @objc func alreadyIsCostumerButton() {
+        delegate?.loginButton()
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)

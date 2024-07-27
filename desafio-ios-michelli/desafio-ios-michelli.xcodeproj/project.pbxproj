@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		8336B6D12C5432D30020D996 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B6D02C5432D30020D996 /* PrimaryButton.swift */; };
 		8336B6D32C5442F00020D996 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B6D22C5442F00020D996 /* SecondaryButton.swift */; };
+		8336B6D72C54704A0020D996 /* LoginCPFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B6D62C54704A0020D996 /* LoginCPFView.swift */; };
+		8336B6D92C5470590020D996 /* LoginCPFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B6D82C5470590020D996 /* LoginCPFViewModel.swift */; };
+		8336B6DB2C5470690020D996 /* LoginCPFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B6DA2C5470690020D996 /* LoginCPFViewController.swift */; };
+		8336B6E32C54709F0020D996 /* desafio_ios_michelliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B6E22C54709F0020D996 /* desafio_ios_michelliTests.swift */; };
 		837D44D82C52933200372C67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44D72C52933200372C67 /* AppDelegate.swift */; };
 		837D44DA2C52933200372C67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44D92C52933200372C67 /* SceneDelegate.swift */; };
 		837D44DC2C52933200372C67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44DB2C52933200372C67 /* ViewController.swift */; };
@@ -16,7 +20,6 @@
 		837D44E42C52933400372C67 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 837D44E32C52933400372C67 /* Base */; };
 		837D44EE2C5295DA00372C67 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44ED2C5295DA00372C67 /* RootViewController.swift */; };
 		837D44F02C5295E900372C67 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44EF2C5295E900372C67 /* RootView.swift */; };
-		837D44F22C5295FE00372C67 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44F12C5295FE00372C67 /* RootViewModel.swift */; };
 		837D44F62C52967800372C67 /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44F52C52967800372C67 /* ViewCodable.swift */; };
 		837D44F92C52980F00372C67 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44F82C52980F00372C67 /* UIColor+Extension.swift */; };
 		837D44FE2C541C6700372C67 /* AvenirLTStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 837D44FB2C541C6700372C67 /* AvenirLTStd-Black.otf */; };
@@ -25,9 +28,24 @@
 		837D45022C54201600372C67 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D45012C54201600372C67 /* UIFont+Extension.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8336B6E42C54709F0020D996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 837D44CC2C52933200372C67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 837D44D32C52933200372C67;
+			remoteInfo = "desafio-ios-michelli";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		8336B6D02C5432D30020D996 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		8336B6D22C5442F00020D996 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		8336B6D62C54704A0020D996 /* LoginCPFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCPFView.swift; sourceTree = "<group>"; };
+		8336B6D82C5470590020D996 /* LoginCPFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCPFViewModel.swift; sourceTree = "<group>"; };
+		8336B6DA2C5470690020D996 /* LoginCPFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCPFViewController.swift; sourceTree = "<group>"; };
+		8336B6E02C54709F0020D996 /* desafio-ios-michelliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "desafio-ios-michelliTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8336B6E22C54709F0020D996 /* desafio_ios_michelliTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desafio_ios_michelliTests.swift; sourceTree = "<group>"; };
 		837D44D42C52933200372C67 /* desafio-ios-michelli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-ios-michelli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		837D44D72C52933200372C67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		837D44D92C52933200372C67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +55,6 @@
 		837D44E52C52933400372C67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		837D44ED2C5295DA00372C67 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		837D44EF2C5295E900372C67 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		837D44F12C5295FE00372C67 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		837D44F52C52967800372C67 /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
 		837D44F82C52980F00372C67 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		837D44FB2C541C6700372C67 /* AvenirLTStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AvenirLTStd-Black.otf"; path = "../../../../../../Desktop/avenir_ff/AvenirLTStd-Black.otf"; sourceTree = "<group>"; };
@@ -47,6 +64,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8336B6DD2C54709F0020D996 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		837D44D12C52933200372C67 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,10 +90,29 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		8336B6D42C5470250020D996 /* LoginCPFView */ = {
+			isa = PBXGroup;
+			children = (
+				8336B6D62C54704A0020D996 /* LoginCPFView.swift */,
+				8336B6D82C5470590020D996 /* LoginCPFViewModel.swift */,
+				8336B6DA2C5470690020D996 /* LoginCPFViewController.swift */,
+			);
+			path = LoginCPFView;
+			sourceTree = "<group>";
+		};
+		8336B6E12C54709F0020D996 /* desafio-ios-michelliTests */ = {
+			isa = PBXGroup;
+			children = (
+				8336B6E22C54709F0020D996 /* desafio_ios_michelliTests.swift */,
+			);
+			path = "desafio-ios-michelliTests";
+			sourceTree = "<group>";
+		};
 		837D44CB2C52933200372C67 = {
 			isa = PBXGroup;
 			children = (
 				837D44D62C52933200372C67 /* desafio-ios-michelli */,
+				8336B6E12C54709F0020D996 /* desafio-ios-michelliTests */,
 				837D44D52C52933200372C67 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				837D44D42C52933200372C67 /* desafio-ios-michelli.app */,
+				8336B6E02C54709F0020D996 /* desafio-ios-michelliTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +129,7 @@
 		837D44D62C52933200372C67 /* desafio-ios-michelli */ = {
 			isa = PBXGroup;
 			children = (
+				8336B6D42C5470250020D996 /* LoginCPFView */,
 				837D44F32C52965900372C67 /* Utils */,
 				837D44EB2C5295B300372C67 /* RootView */,
 				837D44D72C52933200372C67 /* AppDelegate.swift */,
@@ -102,7 +147,6 @@
 			children = (
 				837D44ED2C5295DA00372C67 /* RootViewController.swift */,
 				837D44EF2C5295E900372C67 /* RootView.swift */,
-				837D44F12C5295FE00372C67 /* RootViewModel.swift */,
 			);
 			path = RootView;
 			sourceTree = "<group>";
@@ -148,6 +192,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8336B6DF2C54709F0020D996 /* desafio-ios-michelliTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8336B6E62C54709F0020D996 /* Build configuration list for PBXNativeTarget "desafio-ios-michelliTests" */;
+			buildPhases = (
+				8336B6DC2C54709F0020D996 /* Sources */,
+				8336B6DD2C54709F0020D996 /* Frameworks */,
+				8336B6DE2C54709F0020D996 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8336B6E52C54709F0020D996 /* PBXTargetDependency */,
+			);
+			name = "desafio-ios-michelliTests";
+			productName = "desafio-ios-michelliTests";
+			productReference = 8336B6E02C54709F0020D996 /* desafio-ios-michelliTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		837D44D32C52933200372C67 /* desafio-ios-michelli */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 837D44E82C52933400372C67 /* Build configuration list for PBXNativeTarget "desafio-ios-michelli" */;
@@ -175,6 +237,10 @@
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
+					8336B6DF2C54709F0020D996 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 837D44D32C52933200372C67;
+					};
 					837D44D32C52933200372C67 = {
 						CreatedOnToolsVersion = 15.3;
 					};
@@ -194,11 +260,19 @@
 			projectRoot = "";
 			targets = (
 				837D44D32C52933200372C67 /* desafio-ios-michelli */,
+				8336B6DF2C54709F0020D996 /* desafio-ios-michelliTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8336B6DE2C54709F0020D996 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		837D44D22C52933200372C67 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,6 +288,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8336B6DC2C54709F0020D996 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8336B6E32C54709F0020D996 /* desafio_ios_michelliTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		837D44D02C52933200372C67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,17 +304,27 @@
 				837D44DC2C52933200372C67 /* ViewController.swift in Sources */,
 				837D44D82C52933200372C67 /* AppDelegate.swift in Sources */,
 				837D44EE2C5295DA00372C67 /* RootViewController.swift in Sources */,
+				8336B6DB2C5470690020D996 /* LoginCPFViewController.swift in Sources */,
 				837D44DA2C52933200372C67 /* SceneDelegate.swift in Sources */,
 				8336B6D12C5432D30020D996 /* PrimaryButton.swift in Sources */,
 				837D44F62C52967800372C67 /* ViewCodable.swift in Sources */,
-				837D44F22C5295FE00372C67 /* RootViewModel.swift in Sources */,
 				837D45022C54201600372C67 /* UIFont+Extension.swift in Sources */,
+				8336B6D92C5470590020D996 /* LoginCPFViewModel.swift in Sources */,
 				837D44F02C5295E900372C67 /* RootView.swift in Sources */,
+				8336B6D72C54704A0020D996 /* LoginCPFView.swift in Sources */,
 				837D44F92C52980F00372C67 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8336B6E52C54709F0020D996 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 837D44D32C52933200372C67 /* desafio-ios-michelli */;
+			targetProxy = 8336B6E42C54709F0020D996 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		837D44E22C52933400372C67 /* LaunchScreen.storyboard */ = {
@@ -246,6 +338,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8336B6E72C54709F0020D996 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 732277KLEB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.michellicristina.desafio-ios-michelliTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/desafio-ios-michelli.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/desafio-ios-michelli";
+			};
+			name = Debug;
+		};
+		8336B6E82C54709F0020D996 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 732277KLEB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.michellicristina.desafio-ios-michelliTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/desafio-ios-michelli.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/desafio-ios-michelli";
+			};
+			name = Release;
+		};
 		837D44E62C52933400372C67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -424,6 +552,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8336B6E62C54709F0020D996 /* Build configuration list for PBXNativeTarget "desafio-ios-michelliTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8336B6E72C54709F0020D996 /* Debug */,
+				8336B6E82C54709F0020D996 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		837D44CF2C52933200372C67 /* Build configuration list for PBXProject "desafio-ios-michelli" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
