@@ -1,5 +1,5 @@
 //
-//  LoginCPFViewController.swift
+//  LoginPasswordViewController.swift
 //  desafio-ios-michelli
 //
 //  Created by Michelli Cristina de Paulo Lima on 26/07/24.
@@ -7,19 +7,18 @@
 
 import UIKit
 
-class LoginCPFViewController: UIViewController {
+class LoginPasswordViewController: UIViewController {
 
-    var loginCPFView: LoginCPFView?
+    var loginPasswordView: LoginPasswordView?
 
     override func loadView() {
-        loginCPFView = LoginCPFView()
-        self.view = loginCPFView
+        loginPasswordView = LoginPasswordView()
+        self.view = loginPasswordView
     }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         keyboardSetup()
-        loginCPFView?.delegate = self
+        loginPasswordView?.delegate = self
     }
 
     func keyboardSetup() {
@@ -30,10 +29,10 @@ class LoginCPFViewController: UIViewController {
 
 }
 
-extension LoginCPFViewController {
+extension LoginPasswordViewController {
     
     @objc private func keyboardWillShow(notification: NSNotification) {
-        if let view = loginCPFView, let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+        if let view = loginPasswordView, let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
             let keyboardHeight = keyboardFrame.cgRectValue.height
             let bottomSpace = view.frame.height - (view.nextButton.frame.origin.y + view.nextButton.frame.height)
             view.nextButton.frame.origin.y -= keyboardHeight - bottomSpace + 16
@@ -41,18 +40,18 @@ extension LoginCPFViewController {
     }
 
     @objc private func keyboardWillHide() {
-        if let view = loginCPFView {
+        if let view = loginPasswordView {
             view.nextButton.frame.origin.y = view.frame.height + (-66)
         }
     }
 
 }
 
-extension LoginCPFViewController: LoginCPFViewDelegate {
+extension LoginPasswordViewController: LoginPasswordViewDelegate {
 
     func nextButton() {
-        let vc = LoginPasswordViewController()
-        navigationController?.pushViewController(vc, animated: true)
+        
     }
 
 }
+

@@ -13,6 +13,11 @@
 		8336B6D92C5470590020D996 /* LoginCPFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B6D82C5470590020D996 /* LoginCPFViewModel.swift */; };
 		8336B6DB2C5470690020D996 /* LoginCPFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B6DA2C5470690020D996 /* LoginCPFViewController.swift */; };
 		8336B6E32C54709F0020D996 /* desafio_ios_michelliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B6E22C54709F0020D996 /* desafio_ios_michelliTests.swift */; };
+		8336B6EF2C5490650020D996 /* LoginPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B6EE2C5490650020D996 /* LoginPasswordViewModel.swift */; };
+		8336B6F12C5490770020D996 /* LoginPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B6F02C5490770020D996 /* LoginPasswordViewController.swift */; };
+		8336B6F32C5490870020D996 /* LoginPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B6F22C5490870020D996 /* LoginPasswordView.swift */; };
+		8336B6F52C5498330020D996 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B6F42C5498330020D996 /* UIView+Extension.swift */; };
+		8336B6F72C54988F0020D996 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B6F62C54988F0020D996 /* UIViewController+Extension.swift */; };
 		837D44D82C52933200372C67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44D72C52933200372C67 /* AppDelegate.swift */; };
 		837D44DA2C52933200372C67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44D92C52933200372C67 /* SceneDelegate.swift */; };
 		837D44DC2C52933200372C67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D44DB2C52933200372C67 /* ViewController.swift */; };
@@ -46,6 +51,11 @@
 		8336B6DA2C5470690020D996 /* LoginCPFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCPFViewController.swift; sourceTree = "<group>"; };
 		8336B6E02C54709F0020D996 /* desafio-ios-michelliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "desafio-ios-michelliTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8336B6E22C54709F0020D996 /* desafio_ios_michelliTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desafio_ios_michelliTests.swift; sourceTree = "<group>"; };
+		8336B6EE2C5490650020D996 /* LoginPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPasswordViewModel.swift; sourceTree = "<group>"; };
+		8336B6F02C5490770020D996 /* LoginPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPasswordViewController.swift; sourceTree = "<group>"; };
+		8336B6F22C5490870020D996 /* LoginPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPasswordView.swift; sourceTree = "<group>"; };
+		8336B6F42C5498330020D996 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		8336B6F62C54988F0020D996 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		837D44D42C52933200372C67 /* desafio-ios-michelli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-ios-michelli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		837D44D72C52933200372C67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		837D44D92C52933200372C67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +134,16 @@
 			path = LoginCPFViewTests;
 			sourceTree = "<group>";
 		};
+		8336B6ED2C5490460020D996 /* LoginPasswordView */ = {
+			isa = PBXGroup;
+			children = (
+				8336B6EE2C5490650020D996 /* LoginPasswordViewModel.swift */,
+				8336B6F02C5490770020D996 /* LoginPasswordViewController.swift */,
+				8336B6F22C5490870020D996 /* LoginPasswordView.swift */,
+			);
+			path = LoginPasswordView;
+			sourceTree = "<group>";
+		};
 		837D44CB2C52933200372C67 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +165,7 @@
 		837D44D62C52933200372C67 /* desafio-ios-michelli */ = {
 			isa = PBXGroup;
 			children = (
+				8336B6ED2C5490460020D996 /* LoginPasswordView */,
 				8336B6D42C5470250020D996 /* LoginCPFView */,
 				837D44F32C52965900372C67 /* Utils */,
 				837D44EB2C5295B300372C67 /* RootView */,
@@ -191,6 +212,8 @@
 			children = (
 				837D44F82C52980F00372C67 /* UIColor+Extension.swift */,
 				837D45012C54201600372C67 /* UIFont+Extension.swift */,
+				8336B6F42C5498330020D996 /* UIView+Extension.swift */,
+				8336B6F62C54988F0020D996 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -316,13 +339,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8336B6F72C54988F0020D996 /* UIViewController+Extension.swift in Sources */,
 				8336B6D32C5442F00020D996 /* SecondaryButton.swift in Sources */,
 				837D44DC2C52933200372C67 /* ViewController.swift in Sources */,
 				837D44D82C52933200372C67 /* AppDelegate.swift in Sources */,
 				837D44EE2C5295DA00372C67 /* RootViewController.swift in Sources */,
+				8336B6F12C5490770020D996 /* LoginPasswordViewController.swift in Sources */,
 				8336B6DB2C5470690020D996 /* LoginCPFViewController.swift in Sources */,
+				8336B6EF2C5490650020D996 /* LoginPasswordViewModel.swift in Sources */,
+				8336B6F52C5498330020D996 /* UIView+Extension.swift in Sources */,
 				837D44DA2C52933200372C67 /* SceneDelegate.swift in Sources */,
 				8336B6D12C5432D30020D996 /* PrimaryButton.swift in Sources */,
+				8336B6F32C5490870020D996 /* LoginPasswordView.swift in Sources */,
 				837D44F62C52967800372C67 /* ViewCodable.swift in Sources */,
 				837D45022C54201600372C67 /* UIFont+Extension.swift in Sources */,
 				8336B6D92C5470590020D996 /* LoginCPFViewModel.swift in Sources */,
