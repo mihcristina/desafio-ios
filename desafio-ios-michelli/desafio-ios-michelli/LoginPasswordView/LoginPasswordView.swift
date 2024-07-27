@@ -35,6 +35,12 @@ class LoginPasswordView: UIView {
         return textField
     }()
 
+    private lazy var forgotMyPasswordButton: TertiaryButton = {
+        let button = TertiaryButton(title: "Esqueci minha senha", foregroundColor: .primary)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+
     lazy var nextButton: PrimaryButton = {
         let button = PrimaryButton(title: "Próximo", foregroundColor: .white, backgColor: .primary, enumIcon: .white)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -62,6 +68,7 @@ extension LoginPasswordView: ViewCodable {
     func buildHierarchy() {
         addSubview(titleLabel)
         addSubview(passwordTextField)
+        addSubview(forgotMyPasswordButton)
         addSubview(nextButton)
     }
     
@@ -73,6 +80,9 @@ extension LoginPasswordView: ViewCodable {
             passwordTextField.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 32),
             passwordTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 24),
             passwordTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -24),
+
+            forgotMyPasswordButton.topAnchor.constraint(equalTo: self.passwordTextField.bottomAnchor, constant: 48),
+            forgotMyPasswordButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 24),
 
             nextButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -16),
             nextButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 24),
