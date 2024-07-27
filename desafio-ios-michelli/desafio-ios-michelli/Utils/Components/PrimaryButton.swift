@@ -10,6 +10,7 @@ import UIKit
 enum IconCustomButton: String {
     case white = "icon-white"
     case pink = "icon-pink"
+    case share = "ic_share-ios"
 }
 
 class PrimaryButton: UIControl {
