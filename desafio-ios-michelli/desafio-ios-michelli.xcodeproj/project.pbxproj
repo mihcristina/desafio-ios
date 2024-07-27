@@ -103,9 +103,25 @@
 		8336B6E12C54709F0020D996 /* desafio-ios-michelliTests */ = {
 			isa = PBXGroup;
 			children = (
+				8336B6EA2C5471080020D996 /* LoginCPFViewTests */,
+				8336B6E92C5470FB0020D996 /* RootViewTests */,
 				8336B6E22C54709F0020D996 /* desafio_ios_michelliTests.swift */,
 			);
 			path = "desafio-ios-michelliTests";
+			sourceTree = "<group>";
+		};
+		8336B6E92C5470FB0020D996 /* RootViewTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RootViewTests;
+			sourceTree = "<group>";
+		};
+		8336B6EA2C5471080020D996 /* LoginCPFViewTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginCPFViewTests;
 			sourceTree = "<group>";
 		};
 		837D44CB2C52933200372C67 = {

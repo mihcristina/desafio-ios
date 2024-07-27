@@ -18,7 +18,21 @@ class RootViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-   
+        rootView?.delegate = self
     }
 
+}
+
+extension RootViewController: RootViewDelegate {
+
+    func registerButton() {
+        
+    }
+    
+    func loginButton() {
+        let vc = LoginCPFViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
 }

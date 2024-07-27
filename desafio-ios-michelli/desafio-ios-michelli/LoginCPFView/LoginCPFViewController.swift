@@ -9,19 +9,38 @@ import UIKit
 
 class LoginCPFViewController: UIViewController {
 
+    var loginCPFView: LoginCPFView?
+
+    override func loadView() {
+        loginCPFView = LoginCPFView()
+        self.view = loginCPFView
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        initialSetup()
     }
+
+    func initialSetup() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+
+}
+
+extension LoginCPFViewController {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc private func keyboardWillShow(notification: NSNotification) {
+        if let view = loginCPFView, let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+            let keyboardHeight = keyboardFrame.cgRectValue.height
+            let bottomSpace = view.frame.height - (view.loginButton.frame.origin.y + view.loginButton.frame.height)
+            view.loginButton.frame.origin.y -= keyboardHeight - bottomSpace + 16
+        }
     }
-    */
+
+    @objc private func keyboardWillHide() {
+        loginCPFView?.frame.origin.y = 0
+    }
 
 }
