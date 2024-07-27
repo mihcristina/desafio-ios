@@ -18,10 +18,10 @@ class LoginCPFViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        initialSetup()
+        keyboardSetup()
     }
 
-    func initialSetup() {
+    func keyboardSetup() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
