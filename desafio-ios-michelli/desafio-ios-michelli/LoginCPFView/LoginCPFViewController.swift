@@ -19,6 +19,7 @@ class LoginCPFViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         keyboardSetup()
+        loginCPFView?.delegate = self
     }
 
     func keyboardSetup() {
@@ -34,14 +35,14 @@ extension LoginCPFViewController {
     @objc private func keyboardWillShow(notification: NSNotification) {
         if let view = loginCPFView, let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
             let keyboardHeight = keyboardFrame.cgRectValue.height
-            let bottomSpace = view.frame.height - (view.loginButton.frame.origin.y + view.loginButton.frame.height)
-            view.loginButton.frame.origin.y -= keyboardHeight - bottomSpace + 16
+            let bottomSpace = view.frame.height - (view.nextButton.frame.origin.y + view.nextButton.frame.height)
+            view.nextButton.frame.origin.y -= keyboardHeight - bottomSpace + 16
         }
     }
 
     @objc private func keyboardWillHide() {
         if let view = loginCPFView {
-            view.loginButton.frame.origin.y = view.frame.height + (-66)
+            view.nextButton.frame.origin.y = view.frame.height + (-66)
         }
     }
 

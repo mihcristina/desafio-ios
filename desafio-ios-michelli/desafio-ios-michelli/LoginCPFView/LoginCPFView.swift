@@ -7,12 +7,13 @@
 
 import UIKit
 
+protocol LoginCPFViewDelegate: AnyObject {
+    func nextButton()
+}
+
 class LoginCPFView: UIView {
 
-    var customBottomConstraint: NSLayoutConstraint!
-
-    let bottomViewSpacing: CGFloat = 56
-    let viewKeyboardSpacing: CGFloat = 22
+    weak var delegate: LoginCPFViewDelegate?
 
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
@@ -43,11 +44,16 @@ class LoginCPFView: UIView {
         return textField
     }()
 
-    lazy var loginButton: PrimaryButton = {
+    lazy var nextButton: PrimaryButton = {
         let button = PrimaryButton(title: "Próximo", foregroundColor: .white, backgColor: .primary, enumIcon: .white)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(nextLogiButton), for: .touchUpInside)
         return button
     }()
+
+    @objc private func nextLogiButton() {
+        delegate?.nextButton()
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -66,7 +72,7 @@ extension LoginCPFView: ViewCodable {
         addSubview(titleLabel)
         addSubview(subtitleLabel)
         addSubview(cpfTextField)
-        addSubview(loginButton)
+        addSubview(nextButton)
     }
     
     func buildConstraints() {
@@ -82,10 +88,10 @@ extension LoginCPFView: ViewCodable {
             cpfTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 24),
             cpfTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -24),
 
-            loginButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -16),
-            loginButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 24),
-            loginButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -24),
-            loginButton.heightAnchor.constraint(equalToConstant: 48),
+            nextButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -16),
+            nextButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 24),
+            nextButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -24),
+            nextButton.heightAnchor.constraint(equalToConstant: 48),
         ])
     }
 
