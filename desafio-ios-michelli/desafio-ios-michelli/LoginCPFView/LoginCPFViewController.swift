@@ -40,7 +40,9 @@ extension LoginCPFViewController {
     }
 
     @objc private func keyboardWillHide() {
-        loginCPFView?.frame.origin.y = 0
+        if let view = loginCPFView {
+            view.loginButton.frame.origin.y = view.frame.height + (-66)
+        }
     }
 
 }
